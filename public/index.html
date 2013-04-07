@@ -1,8 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Remark Start</title>
+    <meta charset="utf-8">
+    <title>HTML5 boilerplate – all you really need…</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-  Hello from Index.html
+
+    <ul id="outlet"></ul> 
+    <!-- <script data-main="scripts/main.js" src="scripts/vendor/requirejs/require.js"></script> -->
+    <script src="scripts/vendor/jquery/jquery.js"></script>
+    <script src="scripts/vendor/underscore-amd/underscore.js"></script>
+    <script src="scripts/vendor/backbone-amd/backbone.js"></script>
+
+    <script>
+      var Gtd = {
+        Models: {},
+        Collections: {},
+        Routers: {},
+        Views: {},
+
+        init: function(taskData){
+          this.tasks = new Gtd.Collections.Tasks(taskData);
+          this.app = new Gtd.Routers.TaskRouter(taskData);
+          Backbone.history.start({pushState: true});
+          return this;
+        }
+      }
+    </script>
+
+
 </body>
-</html>
+</html

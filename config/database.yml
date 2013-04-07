@@ -1,0 +1,13 @@
+development:
+  adapter: postgres
+  host: localhost
+  username: bparonto
+  password:
+  database: remark_dev
+
+test:
+  adapter: postgres
+  host: localhost
+  username: bparonto
+  password:
+  database: remark_test
