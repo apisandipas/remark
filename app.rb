@@ -1,9 +1,15 @@
 class API
   def initialize
-    @data = {
-      :name => 'Bryan',
-      :age => '27'
-    } 
+    @data = [
+      {
+        :name => 'Bryan',
+        :age => '27'
+      },
+      {
+        :name => 'Anne',
+        :age => '25'
+      }
+    ]
   end
 
   def json 
