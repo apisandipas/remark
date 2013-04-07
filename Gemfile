@@ -11,6 +11,7 @@ gem 'compass',              '~> 0.12.2'
 
 
 group :development do
-  gem 'pry'
+  gem 'shotgun',            '~> 0.9'
+  gem 'pry',                '~> 0.9.12'
 end
 

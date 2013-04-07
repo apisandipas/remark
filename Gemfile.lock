@@ -20,6 +20,8 @@ GEM
       rack
     rake (10.0.4)
     sass (3.2.7)
+    shotgun (0.9)
+      rack (>= 1.0)
     sinatra (1.4.2)
       rack (~> 1.5, >= 1.5.2)
       rack-protection (~> 1.4)
@@ -37,9 +39,10 @@ PLATFORMS
 
 DEPENDENCIES
   compass (~> 0.12.2)
-  pry
+  pry (~> 0.9.12)
   rake (~> 10.0.4)
   sass (~> 3.2.7)
+  shotgun (~> 0.9)
   sinatra (~> 1.4.2)
   thin (~> 1.5.1)
   yajl-ruby (~> 1.1.0)
