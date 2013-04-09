@@ -21,3 +21,8 @@ group :development do
   gem 'pry',                '~> 0.9.12'
 end
 
+
+group :test do
+  gem 'rspec'
+  gem 'simplecov', :require => false
+end
