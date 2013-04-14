@@ -20,10 +20,7 @@ end
 
 class App < BP::Sinatra::Base
 
-  #  Serve the static front page
   get '/' do
-    # redirect '/index.html'
-    # 'Hello'
     erb :index
   end
 

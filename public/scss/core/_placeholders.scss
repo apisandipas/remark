@@ -1,0 +1,12 @@
+/*
+  Micro Clearfix
+   @usage: 
+      include an @extend %clearfix to keep classes semantic 
+*/
+%clearfix {
+    &:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+}

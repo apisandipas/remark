@@ -1,0 +1,19 @@
+@if $global-border-box == true{
+    *{
+        &,
+        &:before,
+        &:after{
+            @include vendor(box-sizing, border-box);
+        }
+    }
+}
+
+h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,
+dl,dd,ol,ul,
+form,fieldset,legend,
+table,th,td,caption,
+hr{
+    margin:0;
+    padding:0;
+}

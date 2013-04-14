@@ -19,8 +19,11 @@ module BP
         mime_type :woff, 'application/octet-stream'
 
         Dir.glob(File.join(root, 'models', '**/*.rb')).each { |f| require f }
-
+        Dir.glob(File.join(root, 'lib', '**/*.rb')).each { |f| require f }
+        register CoreHelpers
+    
         require File.join(root, 'app.rb')
+
         DataMapper::Logger.new(STDOUT,  :debug)
         DataMapper.finalize
       end
