@@ -8,12 +8,24 @@
 }
 
 
-
-// No need to vendor prefix css3 properties.
 @mixin vendor($property, $value...){
     -webkit-#{$property}:$value;
        -moz-#{$property}:$value;
         -ms-#{$property}:$value;
          -o-#{$property}:$value;
             #{$property}:$value;
+}
+
+
+/*
+  Micro Clearfix
+   @usage: 
+      @include clearfix to keep classes semantic 
+*/
+@mixin clearfix {
+    &:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
 }
